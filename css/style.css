@@ -1,0 +1,598 @@
+*{/* O (*) Significa que toda tag que eu colocar dentro da chave dele, vai aplicar para o codigo inteiro */
+	box-sizing: border-box;/*Calcula o tamanha automadicamento o tamanho da tela para ajustar as bordas das caixas*/
+}
+a{/*vai aplicar em todas as tags a*/
+	text-decoration: none;/*text-decoration: (underline Sublinha o texto (coloca uma linha embaixo do texto) /--/ (overline Sublinha o texto (coloca uma linha a cima do texto)
+(line-through Sublinha o texto (coloca uma linha no meio do texto) /--/ (nome retira a linha que sulinha um link)*/
+}
+html{/*Essa tag é aplicada no html todo*/
+	scroll-behavior: smooth;/*scroll-behavior: smooth: Fas com que ao clicar em uma categoria, vai descendo para o conteudo devagar*/
+}
+body{/*estou tirando todas as margens e padding da tag body*/
+	background-color: #fff;
+	margin: 0;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um*/
+	padding: 0;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	font-family: 'DM Sans', sans-serif;/* fonte buscada na internet(google-fonts)*/
+	
+}
+/* Banner */
+.bloco-2{
+	width: 50%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+}
+/* Galeria */
+.bloco-3{
+	width: 33.3%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+	padding: 20px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+}
+/*Parceiros*/
+.bloco-4{
+	width: 25%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+	padding: 20px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+}
+/* TOPO */
+.container{/*É stilisado para ser aproveitado em outas tags /--/ Aqui esta sendo estilisado todo dimencionamento da tela*/
+	max-width: 1200px;/*Tag almenta a largura do campo(max-coloca uma largura maxima que ela pode atingir)*/
+	width: 100%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	margin: 0 auto;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um /--/ auto: Serve para centralizar o elemento na horizontal*/
+}
+#topo{
+	background: #e6e2db;/*muda a cor dentro do bloco(circulo)*/
+	padding: 15px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+}
+#topo .menu ul{
+	list-style: none;/*list-style: Serve para mudar o stilo da lista - none: tira as bolinhas que estava do lado dos nomes dos links*/
+	padding: 0;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	margin: 0;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um*/
+}
+#topo .menu ul li{
+	display: inline-block;/*O inline-block coloca os elementos uma ao lado do outro e permite alterar a largura e alutura deles */
+	padding: 10px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+}
+.menu ul li a{
+	color: #444;/*serve para mudar a cor das letras*/
+	transition: all 1s ease;/* Tag transition: Essa é a forma compacta da transição(fazer a transição) -- (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão)) -- ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+}
+.menu li a:hover{/*hove: serve para modificar o stilo do conteudo quando colocar o mouse nela (MODIFICA DE FORMA DIRETA(INSTANTANEO)*/
+	color: #00cc99;/*serve para mudar a cor das letras*/
+}
+#topo .logo{
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+	vertical-align: middle;/*Serve para centralisar o texto*/
+	font-weight: bold;/* bold: Colocar negrito -- font-weight: O valor de font-weight pode ser numérico ou uma palavra. Vai depender do valor que buscou no google-fonts*/
+	text-transform: uppercase;/*uppercase(fontes em maiusculo), lowercase(fontes em minusculo)*/ /*text-transform altera todas as letras do texto*/
+}
+#topo .logo img{/*Tag input serve para criar um tipo de  campo de entrada de informações no formulario*/
+	vertical-align: middle;/*Serve para centralisar o texto*/
+}
+#topo .menu{
+	float: right;/* movimenta as coluna para direita ou esquerda da tela */
+}
+/* Banner */
+#banner{
+	background: #e6e2db;/*muda a cor dentro do bloco(circulo)*/
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+	padding: 25px 15px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	margin-bottom: 100px;/*colocauma margem externa abaixo da coluna*/
+}
+#banner h2{
+	font-family: ui-monospace;
+	color: black;
+	font-size: 62px;/* Teg serve para aumentar o tamanho das letras*/
+	margin-bottom: 25px;/*colocauma margem externa abaixo da coluna*/
+	text-shadow: 2px 2px 5px red;/*tag text-shadow - aplica sombra no texto
+                1-parametro: deslocamento a direita(se colocar números negativos a sombra vai para esquerda) - 
+                2-parametro: deslocamento para baixo(se colocar números negativos a sombra vai pra cima) - 
+                3-deslocamento deixa a sobra tipo embaçada(transparente) -
+                4-Meio que almenta a sombra toda em volta(A partir de onde começa o embaçamento)
+                5-parametro: cor da sombra*/
+}
+#banner p{
+	font-size: 20px;/* Teg serve para aumentar o tamanho das letras*/
+	margin-bottom: 40px;/*colocauma margem externa abaixo da coluna*/
+}
+#banner input.icon-whats{/*Tag input serve para criar um tipo de  campo de entrada de informações no formulario*/
+	padding: 22px 5px 22px 55px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+    border: none;/*border: none serve para tirar a borda do ultimo menu*/
+    border-radius: 8px 0 0 8px;/*serve para arredondar as caixas do display block, quano maior o valo maior é o aredontamento*/
+    background: url(../imagens/whats.png) no-repeat 20px center, #fff;/*background: url-chamando a imagem no CSS - no-repeat-falando que não é para ela repetir - 5px center: esta mandando a imagem afasta na horizontal e centralizar na vertical - #fff-mudando a cor do fundo
+	(../-Significa que estou sainda da pasta para poder buscar a imagem em outra(pasta-imagens/whats.png) e jogar aqui dentro)*/
+    background-size: 20px auto;/*background-size serve para mudar o tamanho da imagem dentro do bloco*/
+    width: 60%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+}
+#banner input::placeholder{/*Aqui estou estilizando as letras dentro do campo de (faça seu pedido) /--/ Tag input serve para criar um tipo de  campo de entrada de informações no formulario*/
+	color: #00334e;/*serve para mudar a cor das letras*/
+}
+#banner .bt-whats{
+	padding: 25px 5px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+    border: none;/*border: none serve para tirar a borda do ultimo menu*/
+    background: url(../imagens/seta-branca.png) no-repeat center center, #00334e;/*background: url-chamando a imagem no CSS - no-repeat-falando que não é para ela repetir - 5px center: esta mandando a imagem afasta na horizontal e centralizar na vertical - #fff-mudando a cor do fundo*/
+    color: #fff;/*serve para mudar a cor das letras*/
+    border-radius: 0 8px 8px 0;/*serve para arredondar as caixas do display block, quano maior o valo maior é o aredontamento*/
+    width: 10%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 63px;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+    cursor: pointer;/*Tag:cursor serve para mudar o formato da seta do mouse quando posicionado em um determinado elemento - Tag pointer é um determinado style de seta*/
+    animation: seta 2s linear infinite;/*Forma compacta da animação*/
+}
+.img-banner{
+	margin-left: 120%;/*Margem esterna do lado esquerdo*/
+	animation-name: direita;/*animation-name: Esse é o nome da animação que eu quero declara(modificar)*/
+	animation-duration: 1s;/*animation-duration: Esse é o tempo de duração da animaçao(tempo que ela gastar para chagar nos 100% da animação)*/
+	animation-timing-function: cubic-bezier(0, 0.62, 0.83, 1.36);/*animation-timing-function: serve para mdificar a velocidade em que a animação se move: (ease-in: ela inicia mais rapido e estabilisa no final) -- (ease-out: desacelera no final) -- ( ease-in-out: inicia rapido, estabilisa no meio e reduz no final)*/
+	animation-delay: 1s;/*animation-delay: Esse é o tempo que a animação vai demorar para iniciar*/
+	animation-fill-mode: forwards;/*animation-fill-mode: Serve para manter a animação que vc escolher quando ela terminar -- (backwards: mantei a primeira animação quanto terminar) -- (forwards: mantei a ultima animação quanto terminar) */
+}
+/* Galeria */
+.title{
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+	font-size: 32px;/* Teg serve para aumentar o tamanho das letras*/
+	padding: 0 15px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+}
+.imagem img{/*Tag input serve para criar um tipo de  campo de entrada de informações no formulario*/
+	width: 100%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/		
+}
+.carousel-indicators [data-bs-target]{ /*Alterando a cor do seletor inferior das images da galeria*/
+	background-color: #070707; /*Serve para alterar a cor de fundo do elemento*/
+}
+#galeria{
+
+	text-align: -webkit-center;/*Aqui estou alinahado as imagens da galeria*/
+}
+#galeria .imagem{
+	position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+}
+#galeria .imagem::after{/*Por padrão a (tag: before) é um display inline-block*/
+	content: "";/* tag content: É onde vai o conteudo da nova tag*/
+	display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+	position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+	top: -5px;/*coloca uma margem interna a cima da coluna*/
+	left: -5px;/*coloca uma margem interna a esquerda da coluna*/
+	width: 0;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	height: 0;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+	background-color: #00334e;/*Serve para alterar a cor de fundo do elemento*/
+	z-index:-1;/*serve para mudar a ordem dos elementos, pego o de baixo e jogo para frente, quanto maior o numero mais a cima da tag ele tah*/
+}
+#galeria .imagem::before{/*Por padrão a (tag: before) é um display inline-block*/
+	content: "";/* tag content: É onde vai o conteudo da nova tag*/
+	display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+	position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+	bottom: -5px;/*coloca uma margem interna a baixo da coluna*/
+	right: -5px;/*coloca uma margem interna a direita da coluna*/
+	width: 0;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	height: 0;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+	background-color: #e60606;/*Serve para alterar a cor de fundo do elemento*/
+	z-index:-1;/*serve para mudar a ordem dos elementos, pego o de baixo e jogo para frente, quanto maior o numero mais a cima da tag ele tah*/
+}
+#galeria .imagem:hover::after, #galeria .imagem:hover::before{
+	width: 80%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	height: 80%;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+	transition: all 1s ease;/* Tag transition: Essa é a forma compacta da transição(fazer a transição)
+                              (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão))
+                              ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+}
+.infos-pratos h3{
+	margin-bottom: 0;/*colocauma margem externa abaixo da coluna*/
+    margin-top: 10px;/*coloca uma margem interna a cima da coluna*/
+}
+.infos-pratos p{
+	margin-top: 10px;/*coloca uma margem interna a cima da coluna*/
+}
+.bt-destaque{
+	display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+    width: 170px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    margin: 20px auto;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um /--/ auto: Serve para centralizar o elemento na horizontal*/
+    overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+    text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+    background: #353a39;/*muda a cor dentro do bloco(circulo)*/
+    padding: 15px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+    border-radius: 200px;/*serve para arredondar as caixas do display block, quano maior o valo maior é o aredontamento*/
+    color: #fff;/*serve para mudar a cor das letras*/
+    margin-bottom: 100px;/*colocauma margem externa abaixo da coluna*/
+    position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+}
+/*Animação no botão*/
+.bt-destaque::after{/*Por padrão a (tag: after) é um display inline-block*/
+	content: "";/* tag content: É onde vai o conteudo da nova tag*/
+    display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+    background: rgba(201, 16, 16, 0.7);/*muda a cor dentro do bloco(circulo)*/
+    width: 8px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 70px;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+    position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+    top: -10px;/*coloca uma margem interna a cima da coluna*/
+    left: -15px;/*coloca uma margem interna a esquerda da coluna*/
+    transition: all 0.5s linear;/* Tag transition: Essa é a forma compacta da transição(fazer a transição) -- (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão)) -- ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+    transform: rotate(32deg);/*transform: rotate: serve para rodar um elemento(deg: é medidas em grau (-: rodar ante-horario))*/
+    animation: raio 2s linear infinite;  /*Forma compacta da animação*/   
+}
+.bt-destaque:hover::after{
+	left: 150%;/*coloca uma margem interna a esquerda da coluna*/
+}
+/*informação da entrga*/
+#receba{
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+}
+.receba .infos-pratos{
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+}
+.receba .imagem{
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+	position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+}
+.receba .imagem img{
+	width: auto;/* width:largura do bloco(horizontal)- Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem /--/ auto: Aqui estou dizendo que a imagem vai ter seu tamanho original*/
+}
+.receba .imagem::before{/*before: adicionar conteúdo decorativo à um element utilizando a propriedade content */
+	content: '1';/* tag content: É onde vai o conteudo da nova tag*/
+    display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+    background: #00cc99;/*muda a cor dentro do bloco(circulo)*/
+    color: #fff;/*serve para mudar a cor das letras*/
+    border-radius: 50px;/*serve para arredondar as caixas do display block, quano maior o valo maior é o aredontamento*/
+    width: 40px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    padding-top: 6px;/*padding-top: coloca uma margem interna a cima da coluna*/
+    padding-bottom: 6px;/*coloca uma margem interna a baixo da coluna*/
+    font-size: 24px;/* Teg serve para aumentar o tamanho das letras*/
+    font-weight: bold;/* bold: Colocar negrito -- font-weight: O valor de font-weight pode ser numérico ou uma palavra. Vai depender do valor que buscou no google-fonts*/
+    position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	        /*fixed - relative - absolute - static*/
+    top: 5px;/* coloca uma margem externa a cima da coluna */
+    left: 80px;/* move os plocos(margem externa) para o lado escolhido(nesse caso a esquerda)*/
+}
+.receba .bloco-3:nth-child(2) .imagem::before{/*tag nth-child: esta selecionando uma tag na posição do numero que esta entre parenteses menu(filho) para modificar*/
+	content: '2';/* tag content: É onde vai o conteudo da nova tag*/
+}
+.receba .bloco-3:nth-child(3) .imagem::before{/*tag nth-child: esta selecionando uma tag na posição do numero que esta entre parenteses menu(filho) para modificar*/
+	content: '3';/* tag content: É onde vai o conteudo da nova tag*/
+}
+/*Vantagens*/
+.foguete{
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+	position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	        /*fixed - relative - absolute - static*/
+	top: -40px;/* coloca uma margem externa a cima da coluna */
+	animation: foguete 1.3s infinite;/*Forma compacta da animação*/
+	animation-direction: alternate;/*Essa faz com que a animação ao terminar o percurso ela volta contando de tras pra frente -- (normal: Não altera) -- (reverse:Ele começa do outro lado) -- (alternate: Ela vai ate o final e depois volta)*/
+}
+.foguete img{
+	max-width: 100%;/*Tag almenta a largura do campo(max-coloca uma largura maxima que ela pode atingir)*/
+}
+#vantagens{
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+	margin-top: 100px;/*coloca uma margem interna a cima da coluna*/
+}
+#vantagens .numero{
+	width: 15%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    float: left;/* movimenta as coluna para direita ou esquerda da tela */
+    font-size: 42px;/* Teg serve para aumentar o tamanho das letras*/
+    color: black;/*serve para mudar a cor das letras*/
+    text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+    padding-top: 25px;/*padding-top: coloca uma margem interna a cima da coluna*/
+    margin-bottom: 0;/*colocauma margem externa abaixo da coluna*/
+    margin-left: 10px;/*Margem esterna do lado esquerdo*/
+}
+#vantagens .vantagens{
+	width: 75%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	padding: 0px 10px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+}
+#vantagens .vantagens h4{
+	margin-bottom: 10px;/*colocauma margem externa abaixo da coluna*/
+	
+}
+#vantagens .vantagens p{
+	margin-top: 0px;/*coloca uma margem interna a cima da coluna*/
+	margin-top: 40px;
+}
+#vantagens .infos{
+	width: 100%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+}
+#vantagens .rocket{
+	position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+}
+#vantagens .back-foguete{
+	background: #e6e2db;/*muda a cor dentro do bloco(circulo)*/
+    width: 90%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 380px;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+    border-radius: 20px;/*serve para arredondar as caixas do display block, quano maior o valo maior é o aredontamento*/
+    position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+    z-index: -1;/*serve para mudar a ordem dos elementos, pego o de baixo e jogo para frente, quanto maior o numero mais a cima da tag ele tah*/
+    bottom: 45px; /*colocauma margem externa abaixo da coluna*/
+    margin-left: 5px;/*Margem esterna do lado esquerdo*/
+}
+#vantagens .title{
+	margin-top: 100px;/*coloca uma margem interna a cima da coluna*/
+}
+/*Depoimentos*/
+#depoimentos{
+	margin-top: 100px;/*coloca uma margem interna a cima da coluna*/
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+}
+
+#depoimentos .depoimentos{
+	margin-top: 100px;/*coloca uma margem interna a cima da coluna*/
+	position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+}
+
+#depoimentos .depoimentos .text-depoimentos p{
+	font-size: 20px;/* Teg serve para aumentar o tamanho das letras*/
+    padding: 10px 50px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+    line-height: 36px;/* Teg serve para aumentar a distancia entre linhas no texto*/
+    font-style: italic;/* Teg serve para alterar o estilo da letra*/
+    margin-bottom: 40px;/*colocauma margem externa abaixo da coluna*/
+}
+
+#depoimentos .cliente  div{
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+	width: 90%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	padding: 0 20px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+}
+#depoimentos .cliente img{
+	width: 10%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	border-radius: 50px;/*serve para arredondar as caixas do display block, quano maior o valo maior é o aredontamento*/
+	float: left;/* movimenta as coluna para direita ou esquerda da tela */
+}
+
+#depoimentos .text-depoimentos{
+	position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+	left: 0;/* move os plocos(margem externa) para o lado escolhido(nesse caso a esquerda)*/
+	top: 40px;/* coloca uma margem externa a cima da coluna */
+}
+.cliente h4{
+	margin: 0;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um*/
+}
+.cliente p{
+	margin: 0;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um*/
+}
+#depoimentos img{
+	max-width: 100%;/*Tag almenta a largura do campo(max-coloca uma largura maxima que ela pode atingir)*/
+}
+/*Criando Funcionalidade dos Depoimentos*/
+#dep-1 + .text-depoimentos, #dep-2 + .text-depoimentos{
+	opacity: 0;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+	z-index: -1;/*Aqui estou trazendo a pagina pra frente da mascara*/
+	transition: all 1s ease;/* Tag transition: Essa é a forma compacta da transição(fazer a transição) -- (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão)) -- ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+}
+#dep-1:checked + .text-depoimentos{
+	opacity: 1;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+	z-index: 9;/*Aqui estou trazendo a pagina pra frente da mascara*/
+}
+#dep-2:checked + .text-depoimentos{
+	opacity: 1;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+	z-index: 9;/*Aqui estou trazendo a pagina pra frente da mascara*/
+}
+#dep-1:checked ~ .text-depoimentos + .cliente label[for="dep-1"]{
+	opacity: 1;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+}
+#dep-2:checked + .text-depoimentos + .cliente label[for="dep-2"]{
+	opacity: 1;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+}
+#depoimentos input{
+	display: none;/*display: none: Essa tag oculta o elemento na pagima*/
+}
+#depoimentos .cliente{
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+	margin-top: 240px;/*coloca uma margem interna a cima da coluna*/
+	padding-left: 50px;
+}
+#depoimentos .cliente label{
+	float: left;
+	width: 50%;
+	margin-bottom: 100px;
+	margin-top: 109px;/*coloca uma margem interna a cima da coluna*/
+	opacity: 0.5;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+	transition: all 0.5s linear;/* Tag transition: Essa é a forma compacta da transição(fazer a transição) -- (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão)) -- ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+}
+
+/*Logo de parceiros*/
+#parceiros{
+	background: #fff;/*muda a cor dentro do bloco(circulo)*/
+	overflow: hidden;/* tag overflow(visible) mantem o padrão deixando as letras fora - overflow(hidden) mantem as letras dentro da caixa (internas) mas nao da para velas ( Cortando o conteúdo que ultrapassa o tamanho da DIV)- overflow(scroll) cria umas barras dentro da caixa para eu rodar e conseguir ver o texto dentro da caixa - overflow(auto) Adisciona barra automaticamente quando o texto nao cabe na caixa*/
+			/*hidden - visible - scroll - auto*/
+}
+
+#mapa iframe{
+	width: 100%;/* Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	height: 500px;/*Tag serve para almentar a altura da area (interna) de um elemento*/
+	box-shadow:0 0 3px #999;/*tag box-shadow - é utilizado para adicionar efeitos de sombra em volta de um elemento*/
+									/* outset-forma padrão(como se não tivesse o inset) inset-Aplica a sombra internamente dendro do bloco 
+								   - 1-parametro: deslocamento a direita(se colocar números negativos a sombra vai para esquerda) 
+								   - 2-parametro: deslocamento para baixo(se colocar números negativos a sombra vai pra cima) 
+								   - 3-deslocamento deixa a sobra tipo embaçada(transparente) 
+								   - 4-Meio que almenta a sombra toda em volta(A partir de onde começa o embaçamento) 
+								   - 5-parametro: cor da sombra*/
+	margin-top: 60px;/* coloca uma margem externa a cima da coluna */
+}
+
+/*Rodape*/
+#rodape{
+	padding: 10px 25px;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+}
+#mascara{
+	position: fixed;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+    top: 0;/* coloca uma margem externa a cima da coluna */
+    bottom: 0;/*colocauma margem externa abaixo da coluna*/
+    right: 0;/* move os plocos(margem externa) para o lado escolhido(nesse caso a direita)*/
+    left: 0;/* move os plocos(margem externa) para o lado escolhido(nesse caso a esquerda)*/
+    background: rgba(0, 0, 0, 0.90);/*muda a cor dentro do bloco(circulo)*/
+    width: 100%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 100vh;/*Tag serve para almentar a altura da area (interna) de um elemento /--/ vh: Serve para acompanhar a tela automatico*/
+    opacity: 0;/*mantive a mascara na frente da pagina, so deichei invisivel*/
+    z-index: -1;/*Aqui estou trazendo a pagina pra frente da mascara*/
+    transition: all 1s ease;/* Tag transition: Essa é a forma compacta da transição(fazer a transição) -- (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão)) -- ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+    /*display none não aceita transição -- display: none;/*display: none: Essa tag oculta o elemento na pagima*/
+}
+/*Menu-Responsive*/
+#mascara:target{/*O atributo <a target> especifica onde abrir o documento vinculado por uma tag a (elemento de âncora)*/
+	opacity: 1;/*mantive a mascara na frente do menu*/
+	z-index: 9;/*Aqui estou trazendo o menu pra frente da mascara*/
+	/* displai block não aceita transição -- display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+}
+.menu-mobile a:hover{/*hove: serve para modificar o stilo do conteudo quando colocar o mouse nela (MODIFICA DE FORMA DIRETA(INSTANTANEO)*/
+	color: #00cc99;/*serve para mudar a cor das letras*/
+}
+.menu-mobile{
+	list-style: none;/*list-style: Serve para mudar o stilo da lista - none: tira as bolinhas que estava do lado dos nomes dos links*/
+	text-align: center;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+	padding: 0;/* Essa é uma forma compacta de colocar todas as margens internas em uma orde cronologica, mas tem como colocar um a um*/
+	margin-top: 20%;/*coloca uma margem interna a cima da coluna*/
+}
+.menu-mobile a{
+	color: #444;/*serve para mudar a cor das letras*/
+	font-size: 24px;/* Teg serve para aumentar o tamanho das letras*/
+	text-transform: uppercase;/*uppercase(fontes em maiusculo), lowercase(fontes em minusculo)*/ /*text-transform altera todas as letras do texto*/
+	text-shadow: 1px 1px 2px #333;/*tag text-shadow - aplica sombra no texto
+                1-parametro: deslocamento a direita(se colocar números negativos a sombra vai para esquerda) - 
+                2-parametro: deslocamento para baixo(se colocar números negativos a sombra vai pra cima) - 
+                3-deslocamento deixa a sobra tipo embaçada(transparente) -
+                4-Meio que almenta a sombra toda em volta(A partir de onde começa o embaçamento)
+                5-parametro: cor da sombra*/
+	letter-spacing: 3px;/*A propriedade letter-spacing do texto é usada para controlar o espaço em branco entre as letras. Nota: Para esta propriedade pode ser definido valores negativos.*/
+}
+.menu-mobile li{
+	margin-top: 20px;/*coloca uma margem interna a cima da coluna*/
+}
+.bt-menu{
+	display: none;/*display: none: Essa tag oculta o elemento na pagima*/
+	margin-top: 15px;/*coloca uma margem interna a cima da coluna*/
+}
+.bt-menu a{/*Por padrão a (tag: a) é um display inline-block*/
+	display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+	width: 35px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+	height: 30px;/*Tag serve para almentar a altura da area (interna) de um elemento /--/ vh: Serve para acompanhar a tela automatico*/
+	position: relative;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+	border-top: solid 4px #00334e;/*define o estilo da borda superior*/
+}
+.bt-menu a::before{/*Por padrão a (tag: before) é um display inline-block*/
+	content: "";
+    width: 35px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 4px;/*Tag serve para almentar a altura da area (interna) de um elemento /--/ vh: Serve para acompanhar a tela automatico*/
+    display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+    background-color: #00334e;/*Serve para alterar a cor de fundo do elemento*/
+    position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+    top: 4px;/*coloca uma margem interna a cima da coluna*/    
+}
+.bt-menu a::after{/*Por padrão a (tag: after) é um display inline-block*/
+	content: "";
+    width: 15px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 4px;/*Tag serve para almentar a altura da area (interna) de um elemento /--/ vh: Serve para acompanhar a tela automatico*/
+    display: block;/*Tag - display: block - Essa tag ocupa a linha toda, não permite que nada fica ao seu lado e posso alterar a largura e altura do mesmos(Ela coloca o elemento dentro de um bloco, onde podemos modificar a largura e altura)*/
+    background-color: #00334e;/*Serve para alterar a cor de fundo do elemento*/
+    position: absolute;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+    top: 12px;/*coloca uma margem interna a cima da coluna*/
+    right: 0;/* move os plocos(margem externa) para o lado escolhido(nesse caso a direita)*/
+    transition: all 0.5s ease;/* Tag transition: Essa é a forma compacta da transição(fazer a transição)
+                              (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão))
+                              ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+}
+.bt-menu a:hover::after{/*Por padrão a (tag: after) é um display inline-block*/
+	width: 35px;/*Faz parte da transição*/
+}
+.fechar{
+	width: 80%;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    margin: 0 auto;/* Essa é uma forma compacta de colocar todas as margem externa em uma orde cronologica, mas tem como colocar um a um /--/ auto: Serve para centralizar o elemento na horizontal*/
+    text-align: right;/*teg muda a posição do text-align: left(esquerda), right(direita), center(centro), justify(Faz com que o texto acabe sempre alinhado)*/
+    margin-top: 25px;/*coloca uma margem interna a cima da coluna*/
+    font-size: 32px;/* Teg serve para aumentar o tamanho das letras*/
+    font-weight: bold;/* bold: Colocar negrito -- font-weight: O valor de font-weight pode ser numérico ou uma palavra. Vai depender do valor que buscou no google-fonts*/
+}
+.fechar a{
+	color: #d37878;/*serve para mudar a cor das letras*/
+	text-shadow: 1px 1px 2px #fff;/*tag text-shadow - aplica sombra no texto
+                1-parametro: deslocamento a direita(se colocar números negativos a sombra vai para esquerda) - 
+                2-parametro: deslocamento para baixo(se colocar números negativos a sombra vai pra cima) - 
+                3-deslocamento deixa a sobra tipo embaçada(transparente) -
+                4-Meio que almenta a sombra toda em volta(A partir de onde começa o embaçamento)
+                5-parametro: cor da sombra*/
+}
+/*Criando Menu Lateral*/
+#mascara:target .menu-container{
+	width: 250px;/*Faz parte da transição*/
+}
+.menu-container{
+    width: 0px;/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/
+    height: 100vh;/*Tag serve para almentar a altura da area (interna) de um elemento /--/ vh: Serve para acompanhar a tela automatico*/
+    position: fixed;/* serve para mover a imagem dentro do quadrado atravez de px (absolute serve para ficar uma sobre a outra para o lado, e consigo movimenta a imagem na tela usando PX) -(fixed mantei a imagem parada mas acompanha o movimento da tela) - (relative serve para ficar uma sobre a outra para baixo) - (static fica parada e nao acompanha o movimento da tela)*/
+	     /*fixed - relative - absolute - static*/
+    background: #fff;/*muda a cor dentro do bloco(circulo)*/
+    top: 0;/*coloca uma margem interna a cima da coluna*/
+    bottom: 0;/*colocauma margem externa abaixo da coluna*/
+    right: 0;/* move os plocos(margem externa) para o lado escolhido(nesse caso a direita)*/
+    transition: all 0.9s ease;/* Tag transition: Essa é a forma compacta da transição(fazer a transição)
+                              (all - serve para modificar todo o contedudo de uma so vez(fazer a transisão))
+                              ease:é uma função para indicar a curva de velocidade e é definida em quatro pontos*/
+}
+/*Animação no Banner*/
+@keyframes direita{
+	from{margin-left: 120%}/*from: É o inicia da transição(transformação) da animação*/
+	to{margin-left: 0;}/*to: É o final da transição(transformação) da animação*/
+}
+/*Animação na seta*/
+@keyframes seta{
+	0%{background-position-x: center;}/*0%: É o inicia da transição(transformação) da animação*/
+	75%{background-position-x: center;}/*background-position-x: faz o movimento na horizontal*/
+	85%{background-position-x: 30%;}
+	92%{background-position-x: 70%;}
+	100%{background-position-x: center;}/*100%: É o final da transição(transformação) da animação*/
+}
+/*Animação botão Peça Agora(bt-destaques)*/
+@keyframes raio{
+	0%{left: -15px}
+    90%{left: -15px}
+    100%{left: 110%}
+}
+@keyframes foguete {
+	from{top: 0;} 
+	to{top: -50px;}
+}
+/* Responsive */
+@media(max-width: 879px){
+	.bloco-2{width: 100%}
+	.bloco-3{width: 50%}
+	.bloco-4{width: 50%}	
+	#banner h2, #banner p, #banner form{text-align: center;}
+	#banner img{width: 90%; margin-top: 25px}
+	#receba .bloco-3{width: 100%; text-align: center;}
+	.receba .imagem::before{left: 30%}
+	.menu .links{display: none;}/*display: none: Essa tag oculta o elemento na pagima*/
+	.bt-menu{display: block;}
+}
+@media (max-width: 502px){
+	.bloco-3{width:100%;}/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/	
+	.bloco-4{width:100%;}/*Comprimento da coluna - Quando eu coloco % estou dizendo que em relação ao tamanha total da tela e quando eu reduzo o tamanho da tela o conteudo reduz acompanhando tambem*/	
+}
+
+@media (max-width: 500px){
+	#depoimentos .cliente{margin-top: 335px;}
+}
+@media (max-width: 335px){
+	#depoimentos .cliente label{
+		margin-top: 290px;
+	}
+}
